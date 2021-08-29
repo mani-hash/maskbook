@@ -13,17 +13,17 @@
             cursor: pointer;
         }
 
-        .container {
+        .vij-container {
             align-items: center;
             background: #000;
             border-radius: 40px;
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
                 0 10px 10px rgba(0, 0, 0, 0.22);
             display: flex;
-            height: 80px;
+            height: 45px;
             justify-content: center;
             position: relative;
-            width: 200px;
+            width: 140px;
         }
 
         .text {
@@ -226,10 +226,10 @@
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input onkeyup="hideInvalid()" name="pass" type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
-            <button type="submit" class="btn">
-                <div class="container vij-hov" onclick="this.classList.toggle('active')">
+            <button type="submit"  class="btn">
+                <div class="vij-container vij-hov" onclick="this.classList.toggle('active')">
                     <span class="text">LOGIN</span>
-                    <svg class="fingerprint fingerprint-base" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <svg class="fingerprint fingerprint-base" xmlns="http://www.w3.org/2000/svg" width="100" height="65" viewBox="-40 0 100 100">
                         <g class="fingerprint-out" fill="none" stroke-width="2" stroke-linecap="round">
                             <path class="odd" d="m 25.117139,57.142857 c 0,0 -1.968558,-7.660465 -0.643619,-13.149003 1.324939,-5.488538 4.659682,-8.994751 4.659682,-8.994751" />
                             <path class="odd" d="m 31.925369,31.477584 c 0,0 2.153609,-2.934998 9.074971,-5.105078 6.921362,-2.17008 11.799844,-0.618718 11.799844,-0.618718" />
@@ -251,7 +251,7 @@
                             <path class="odd" d="m 48.801947,56.125 c 0,0 0.234502,-1.809418 0.109835,-3.375 -0.124667,-1.565582 -0.5625,-3.1875 -0.5625,-3.1875" />
                         </g>
                     </svg>
-                    <svg class="fingerprint fingerprint-active" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <svg class="fingerprint fingerprint-active" xmlns="http://www.w3.org/2000/svg" width="100" height="65" viewBox="-40 0 100 100">
                         <g class="fingerprint-out" fill="none" stroke-width="2" stroke-linecap="round">
                             <path class="odd" d="m 25.117139,57.142857 c 0,0 -1.968558,-7.660465 -0.643619,-13.149003 1.324939,-5.488538 4.659682,-8.994751 4.659682,-8.994751" />
                             <path class="odd" d="m 31.925369,31.477584 c 0,0 2.153609,-2.934998 9.074971,-5.105078 6.921362,-2.17008 11.799844,-0.618718 11.799844,-0.618718" />
