@@ -78,7 +78,7 @@ $u = $_SESSION["user"];
     </div>
 
     <?php
-    $con = new mysqli("localhost", "mani", "sayanora123", "web");
+    $con = new mysqli("localhost", "mani", "sayanora123", "mask_web");
 
     $sql = "SELECT id, description, date, email FROM masks ORDER BY DATE DESC";
     $result = $con->query($sql);

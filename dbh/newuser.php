@@ -7,7 +7,7 @@ if(!isset($_POST["email"])) {
 $e = $_POST["email"];
 $p = $_POST["password"];
 
-$con = new mysqli("localhost", "mani", "sayanora123", "web");
+$con = new mysqli("localhost", "mani", "sayanora123", "mask_web");
 
 $sql = "INSERT INTO users(email,password) VALUES ('$e','$p')";
 

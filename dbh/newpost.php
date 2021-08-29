@@ -7,7 +7,7 @@ if (!isset($_SESSION['user'])) {
 $email = $_SESSION['user'];
 
 
-$con = new mysqli("localhost", "mani", "sayanora123", "web");
+$con = new mysqli("localhost", "mani", "sayanora123", "mask_web");
 
 $description = $con->real_escape_string($_POST["des"]);
 
