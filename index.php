@@ -210,7 +210,7 @@
     ?>
 
     <div class="container-md w-50 mt-5">
-        <form method="POST" action="dbh/login.php">
+        <form onsubmit="document.getElementsByClassName('vij-container')[0].classList.toggle('active')" method="POST" action="dbh/login.php">
             <div class="text-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -226,8 +226,8 @@
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input onkeyup="hideInvalid()" name="pass" type="password" class="form-control" id="exampleInputPassword1" required>
             </div>
-            <button type="submit"  class="btn">
-                <div class="vij-container vij-hov" onclick="this.classList.toggle('active')">
+            <button type="submit" class="btn">
+                <div class="vij-container vij-hov">
                     <span class="text">LOGIN</span>
                     <svg class="fingerprint fingerprint-base" xmlns="http://www.w3.org/2000/svg" width="100" height="65" viewBox="-40 0 100 100">
                         <g class="fingerprint-out" fill="none" stroke-width="2" stroke-linecap="round">
@@ -291,6 +291,8 @@
                 echo "<div class='alert alert-danger mt-4' id='invalid' role='alert'>
                 User doesn't exist!
                 </div>";
+
+                
             }
             ?>
 
@@ -303,9 +305,9 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script>
-        const container = document.querySelector(".container");
-        container.addEventListener("animationend", () => {
-            container.classList.remove("active");
+        const vij_container = document.querySelector(".vij-container");
+        vij_container.addEventListener("animationend", () => {
+            vij_container.classList.remove("active");
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -313,6 +315,8 @@
         function hideInvalid() {
             document.getElementById("invalid").style.visibility = "hidden";
         }
+
+        
     </script>
 
 </body>

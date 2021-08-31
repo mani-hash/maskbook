@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
     header("Location: ../home.php");
     sleep(5);
 } else {
-    header("Location: ../index.php?invalid");
+    header("Location: ../?invalid");
 }
 
 $con->close();
