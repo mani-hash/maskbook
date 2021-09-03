@@ -77,7 +77,7 @@ $u = $_SESSION["user"];
         </div>
     </div>
 
-    <?php
+    <?php 
 
     include("dbh/dbdata.php");
 
