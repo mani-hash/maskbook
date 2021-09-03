@@ -9,7 +9,9 @@ if (!isset($_POST["email"])) {
 $e = $_POST["email"];
 $p = $_POST["pass"];
 
-$con = new mysqli("localhost", "mani", "sayanora123", "mask_web");
+include("dbdata.php");
+
+$con = new mysqli("$dbservername", "$dbusername", "$dbpassword", "$dbname");
 
 $sql = "SELECT * FROM users WHERE email='$e' AND password='$p'";
 

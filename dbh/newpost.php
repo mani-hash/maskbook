@@ -6,8 +6,9 @@ if (!isset($_SESSION['user'])) {
 
 $email = $_SESSION['user'];
 
+include("dbdata.php");
 
-$con = new mysqli("localhost", "mani", "sayanora123", "mask_web");
+$con = new mysqli("$dbservername", "$dbusername", "$dbpassword", "$dbname");
 
 $description = $con->real_escape_string($_POST["des"]);
 
@@ -22,4 +23,5 @@ if ($result == TRUE) {
 }
 
 $con->close();
+
 ?>
