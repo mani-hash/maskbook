@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if(!isset($_POST["email"])) {
     header("Location: ../signup.php");
@@ -18,7 +19,8 @@ $result = $con->query($sql);
 if ($result == TRUE) {
     header("Location: ../index.php?success");
 } else {
-    header("Location: ../signup.php?failed");
+    $_SESSION["failed"] = "login_failed";
+    header("Location: ../signup.php");
 }
 
 $con->close();

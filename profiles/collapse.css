@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 991px) {
     .userdrop_size {
-        width: 300px !important;
+        width: 40% !important;
         margin-left: 10px;
         background-color: #414446;
         

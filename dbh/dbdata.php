@@ -3,6 +3,6 @@
 $dbservername = "localhost";
 $dbusername = "mani";
 $dbpassword = "sayanora123";
-$dbname = "web";
+$dbname = "mask_web";
 
 ?>

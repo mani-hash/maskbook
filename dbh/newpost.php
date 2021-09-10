@@ -21,9 +21,18 @@ $sql = "INSERT INTO masks(description, email, date) VALUES ('$description','$ema
 $result = $con->query($sql);
 
 if ($result == TRUE) {
-    header("Location: ../home.php");
+    if (isset($_GET["home"])) {
+        header("Location: ../home.php");
+    } else if (isset($_GET["mypost"])) {
+        header("Location: ../mypost.php");
+    }
+    
 } else {
-    header("Location: ../home.php?failed");
+    if (isset($_GET["home"])) {
+        header("Location: ../home.php?failed");
+    } else if (isset($_GET["mypost"])) {
+        header("Location: ../mypost.php?failed");
+    }
 }
 
 $con->close();

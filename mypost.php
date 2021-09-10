@@ -29,7 +29,7 @@ $u = $_SESSION["user"];
     <div class="card mt-4">
 
         <div class="card-body">
-            <form action="dbh/newpost.php" method="POST">
+            <form action="dbh/newpost.php?mypost" method="POST">
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Unmask your thoughts</label>
                     <textarea name="des" class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="1000" required></textarea>

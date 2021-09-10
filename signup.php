@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -63,18 +66,27 @@
             <div class="d-grid gap-2 col-4 mx-auto">
                 <button type="submit" class="btn btn-dark btn-md">Sign up</button>
             </div>
-
-            <div class='alert alert-danger mt-2' id="error" role='alert' style="visibility:hidden">
-                Passwords do not match!
-            </div>
-
             <?php
-            if (isset($_GET["failed"])) {
-                echo "<div class='alert alert-danger' id='failed' role='alert'>
-                User already exists!
-                </div>";
+            if (isset($_SESSION["failed"])) {
+                echo("<div class='alert alert-danger mt-2' id='failed' role='alert'>
+                User already exists
+                </div>");
+
+                // unset($_SESSION["failed"]);
+                session_unset();
+
+                
+            } else {
+                echo("<div class='alert alert-danger mt-2' id='error' role='alert' style='visibility:hidden'>
+                Passwords Do Not Match!
+                </div>");
             }
+
+            
             ?>
+            
+
+
 
         </form>
 
