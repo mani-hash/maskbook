@@ -16,6 +16,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="mypost.php">My Post</a>
                 </li>
+                <!-- temp code -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
             </ul>
             <div class="d-flex">
                 <span class="px-3 h5 text-white-50 navbar-text">
@@ -27,19 +42,47 @@
 
                 </span>
 
-                <a class="pe-3" href="dbh/logout.php">
+                <!-- <a class="pe-3" href="dbh/logout.php">
                     <div class=" bg-danger rounded rounded-3 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-power" viewBox="0 0 16 16">
                             <path d="M7.5 1v7h1V1h-1z" />
                             <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
                         </svg>
                     </div>
-                </a>
+                </a> -->
+                
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+                    <div class="collapse navbar-collapse mx-2 px-3">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                </a>
+
+                                <ul class="dropdown-menu userdrop_size" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Somet</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
 
             </div>
         </div>
+
     </div>
+
 </nav>
+
+
 
 
 <!-- <nav class="navbar navbar-light bg-dark">

@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (isset($_SESSION['user'])) {
+    header("Location: home.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -207,6 +215,8 @@
 <body>
     <?php
     include_once("header.php");
+
+    
     ?>
 
     <div class="container-md w-50 mt-5">

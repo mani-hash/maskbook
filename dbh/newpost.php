@@ -6,13 +6,17 @@ if (!isset($_SESSION['user'])) {
 
 $email = $_SESSION['user'];
 
+date_default_timezone_set("Asia/Colombo");
+
+$date_posted = date("Y-m-d H:i:s");
+
 include("dbdata.php");
 
 $con = new mysqli("$dbservername", "$dbusername", "$dbpassword", "$dbname");
 
 $description = $con->real_escape_string($_POST["des"]);
 
-$sql = "INSERT INTO masks(description, email) VALUES ('$description','$email')";
+$sql = "INSERT INTO masks(description, email, date) VALUES ('$description','$email', '$date_posted')";
 
 $result = $con->query($sql);
 
