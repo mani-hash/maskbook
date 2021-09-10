@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['user'])) {
+if (!isset($_SESSION['user']) && trim($_POST["des"] == "")) {
     header("Location: ../index.php");
 }
 
@@ -14,7 +14,23 @@ include("dbdata.php");
 
 $con = new mysqli("$dbservername", "$dbusername", "$dbpassword", "$dbname");
 
-$description = $con->real_escape_string($_POST["des"]);
+$des_temp = preg_split('/\r\n|[\r\n]/', trim($_POST['des']));
+
+
+
+$n = 0;
+$temp_text = "";
+
+while ($n <= count($des_temp)) {
+    
+    $temp_text .= $des_temp[$n] . "<br>";
+    
+    $n+=1;
+}
+
+
+
+$description = $con->real_escape_string($temp_text);
 
 $sql = "INSERT INTO masks(description, email, date) VALUES ('$description','$email', '$date_posted')";
 
@@ -26,7 +42,6 @@ if ($result == TRUE) {
     } else if (isset($_GET["mypost"])) {
         header("Location: ../mypost.php");
     }
-    
 } else {
     if (isset($_GET["home"])) {
         header("Location: ../home.php?failed");
@@ -38,3 +53,4 @@ if ($result == TRUE) {
 $con->close();
 
 ?>
+

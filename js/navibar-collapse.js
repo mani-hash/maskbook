@@ -54,7 +54,7 @@ if (cur_width > 991) {
 }
 
 
-//navbar name change
+
 
 
 

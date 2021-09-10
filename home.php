@@ -38,7 +38,7 @@ $u = $_SESSION["user"];
             <form action="dbh/newpost.php?home" method="POST">
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Unmask your thoughts</label>
-                    <textarea name="des" class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="1000" required></textarea>
+                    <textarea name="des" class="form-control" id="post_area" rows="3" maxlength="1000" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-secondary">
                     <svg class="icon icon-user-secret" width="16px" height="16px">
