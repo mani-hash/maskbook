@@ -188,3 +188,30 @@
         opacity: 0;
     }
 }
+
+
+@media screen and (max-width: 415px) {
+    .vij-container {
+        width: 120px;
+        margin-left: -20px;
+    }
+
+    /* .signup-div {
+        margin-left: -20px;
+    } */
+    
+}
+
+@media screen and (max-width: 329px) {
+    .vij-container {
+        margin-left: -30px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .signup-div {
+        margin-left: -35px;
+    }
+    
+}

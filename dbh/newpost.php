@@ -23,7 +23,12 @@ $temp_text = "";
 
 while ($n <= count($des_temp)) {
     
-    $temp_text .= $des_temp[$n] . "<br>";
+    if ($n == count($des_temp) - 1) {
+        $temp_text .= $des_temp[$n];
+    } else {
+        $temp_text .= $des_temp[$n] . "<br>";
+    }
+    
     
     $n+=1;
 }
