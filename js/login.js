@@ -28,5 +28,5 @@ vij_container.addEventListener("animationend", () => {
 //hide invalid
 
 function hideInvalid() {
-  document.getElementById("invalid").style.visibility = "hidden";
+  document.getElementById("invalid").style.display = "none";
 }

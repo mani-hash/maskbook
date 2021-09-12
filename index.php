@@ -52,11 +52,19 @@ if (isset($_SESSION['user'])) {
 
                 <div id="emailHelp" class="form-text mb-3">We'll never share your email with anyone else.</div>
 
+                <?php
+                if (isset($_GET["invalid"])) {
+                    echo "<div class='alert alert-danger mt-1' id='invalid' role='alert'>
+                User doesn't exist!
+                </div>";
+                }
+                ?>
+
 
                 <div class="mb-3 input-group">
                     <div class="form-floating form-floating-group flex-grow-1">
 
-                        <input aria-label="Recipient's username" aria-describedby="button-addon2" onkeyup="hideInvalid()" name="pass" type="password" class="form-control" id="login-password" placeholder="password" required>
+                        <input onkeyup="hideInvalid()" name="pass" type="password" class="form-control" id="login-password" placeholder="password" required>
 
                         <label for="login-password" class="form-label">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
@@ -72,8 +80,6 @@ if (isset($_SESSION['user'])) {
                         </svg>
                     </button>
                 </div>
-
-
 
                 <div class="text-center">
                     <button type="submit" class="btn">
@@ -133,7 +139,7 @@ if (isset($_SESSION['user'])) {
                     </button>
 
 
-                    <!-- submit button -->
+                    
 
                     <button type="button" class="btn">
                         <a href="signup.php" class="btn">
@@ -150,11 +156,7 @@ if (isset($_SESSION['user'])) {
                     echo "<div class='alert alert-success mt-4' id='success' role='alert'>
                 Signup successful! Please login!
                 </div>";
-                } else if (isset($_GET["invalid"])) {
-                    echo "<div class='alert alert-danger mt-4' id='invalid' role='alert'>
-                User doesn't exist!
-                </div>";
-                }
+                } 
                 ?>
 
             </form>
