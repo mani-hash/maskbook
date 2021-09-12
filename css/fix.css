@@ -1,0 +1,74 @@
+/* index.php password field eye fix*/
+
+/* Start */
+
+.input-group div {
+    width: 82%;
+}
+
+.input-group button {
+    width: 13%;
+}
+
+.input-group button svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1100px) {
+    .input-group div {
+        width: 82%;
+    }
+    
+    .input-group button {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .input-group div {
+        width: 79%;
+    }
+    
+    .input-group button {
+        width: 20%;
+    }
+
+    .input-group button svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .input-group div {
+        width: 78%;
+    }
+    
+    .input-group button {
+        width: 19%;
+    }
+
+    .input-group button svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .input-group div {
+        width: 70%;
+    }
+    
+    .input-group button {
+        width: 24%;
+    }
+
+    .input-group button svg {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+
+/* End */

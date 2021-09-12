@@ -3,6 +3,9 @@ session_start();
 
 $u = $_SESSION["user"];
 
+if (!isset($_SESSION['user'])) {
+    header("Location: .");
+}
 
 ?>
 
