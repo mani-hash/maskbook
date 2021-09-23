@@ -6,5 +6,5 @@
     <li>
         <hr class="dropdown-divider">
     </li>
-    <li><a class="dropdown-item" href="dbh/logout.php">Log out</a></li>
+    <li><a style="color:red;" class="dropdown-item" href="dbh/logout.php">Log out</a></li>
 </ul>
