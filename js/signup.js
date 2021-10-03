@@ -48,8 +48,12 @@ function validateInputs() {
 
   var user_length = user_name.value.trim().length;
   var user_value = user_name.value.trim();
+  
   // alert(user_value);
-  var pattern_reject = /^([0-9])|(\s)|^([_])|^([.])/g;
+  // var pattern_reject = /^([0-9])|(\s)|^([_])|^([.])/g;
+
+  var pattern_reject = /^([0-9])|(\s)/g;
+
   var pattern_accept = /^[a-zA-Z0-9_.]*$/g;
 
   if (user_length == 0) {

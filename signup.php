@@ -18,7 +18,7 @@ session_start();
     <title>Signup</title>
 </head>
 
-<body>
+<body id="login_body">
 
     <?php
     include_once("header.php");
@@ -56,7 +56,7 @@ session_start();
 
                 } else if (isset($_SESSION["wrong_pass"])) {
                     echo ("<div class='alert alert-danger mt-2' id='failed' role='alert'>
-                    Invalid Login!
+                    Invalid Login! 
                     </div>");
 
                     session_unset();

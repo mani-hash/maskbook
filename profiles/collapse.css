@@ -1,8 +1,10 @@
 .userdrop_size {
     width: 20px !important;
     margin-left: -70px;
+
+    background-color: #414446;
    
-    background-color: #6c757d;
+    /* background-color: #6c757d; */
     
     
 }

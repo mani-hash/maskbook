@@ -1,0 +1,29 @@
+body {
+    background-image: url("../images/ezgif-1-3d149b003fcb.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn:focus,
+.btn:active {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.drop_button {
+    color:white;
+}
+
+.drop_button:hover {
+    color:black;
+}
+
+#log_out {
+    color: red;
+}
+
+#main_navbar {
+    border-radius: 2px;
+  box-shadow: 0px 1px 10px #999;
+}

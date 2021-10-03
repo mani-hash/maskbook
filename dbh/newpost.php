@@ -12,7 +12,7 @@ $date_posted = date("Y-m-d H:i:s");
 
 
 
-$des_temp = preg_split('/\r\n|[\r\n]/', trim($_POST['des']));
+$des_temp = preg_split('/\r\n|[\r\n]/', trim(htmlspecialchars($_POST['des'])));
 
 
 

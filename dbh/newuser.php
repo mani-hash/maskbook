@@ -21,8 +21,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 if (
-    preg_match("/^[a-zA-Z0-9_]*$/", $username) == true && preg_match("/^[0-9]/", $username) != true
-    && preg_match("/^[_]/", $username) != true && preg_match("/^[.]/", $username) != true
+    preg_match("/^[a-zA-Z0-9._]*$/", $username) == true && preg_match("/^[0-9]/", $username) != true
 ) {
 
     $pass_username = true;
@@ -56,7 +55,7 @@ if ($pass_email == true && $pass_username == true && $pass_password == true) {
     $result = $sql->execute();
 
     if ($result == TRUE) {
-        header("Location: ../index.php");
+        header("Location: ../");
         $_SESSION["success"] = "user created";
     } else {
         $_SESSION["failed"] = "acc_creation_failed";

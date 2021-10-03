@@ -23,7 +23,8 @@ if (isset($_SESSION['user'])) {
     <title>Login</title>
 </head>
 
-<body>
+<body id="login_body">
+    
     <?php
     include_once("header.php");
     ?>

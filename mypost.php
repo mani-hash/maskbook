@@ -19,6 +19,7 @@ if (!isset($_SESSION['user'])) {
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="profiles/collapse.css" rel="stylesheet">
+    <link href="css/posts.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +31,7 @@ if (!isset($_SESSION['user'])) {
 
     ?>
 
-    <div class="card mt-4">
+    <div id="main-post" class="card mt-4 m-2">
 
         <div class="card-body">
             <form action="dbh/newpost.php?mypost" method="POST" enctype="multipart/form-data">
@@ -86,7 +87,7 @@ if (!isset($_SESSION['user'])) {
     ?>
 
 
-        <div class="card mt-4">
+        <div class="card mt-4 m-3 sub_posts">
             <div class="card-header">
                 <?php
                 echo ($row["post_date"]);
@@ -139,6 +140,12 @@ if (!isset($_SESSION['user'])) {
                     </footer>
                 </blockquote>
             </div>
+            <div class="card-footer">
+                <button onclick="changeHeart(this)" class="btn heart">
+                    <img src="images/suit-heart.svg">
+                </button>
+
+            </div>
         </div>
 
     <?php
@@ -157,6 +164,7 @@ if (!isset($_SESSION['user'])) {
         li_2[1].classList.add("active");
     </script>
    
+   <script src="js/themes.js"></script>    
     <script src="js/navibar-collapse.js"></script>
     <script src="js/file_img.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

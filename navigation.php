@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav id="main_navbar" class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
 
     <div class="container-fluid">
         <a class="navbar-brand">
@@ -10,7 +10,7 @@
             <span class="px-3 h5 text-white-50 navbar-text temp_collapse">
 
                 <?php
-                echo ("Hi, " . $u)
+                echo ("@" . $u)
                 ?>
 
 
@@ -46,7 +46,7 @@
                 <span class="px-3 h5 text-white-50 navbar-text per_collapse">
 
                     <?php
-                    echo ("Hi, " . $u)
+                    echo ("@" . $u)
                     ?>
 
 
