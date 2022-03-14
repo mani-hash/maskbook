@@ -1,6 +1,8 @@
-# viji-mani-projects
+# Mask book (social media webpage)
 
 Course project website (from Teran sir web dev course)
+
+website link: [Mani Mask](http://manimask.atwebpages.com/)
 
 Consists both the original project code and modified version of the same project code (with new features)
 
@@ -17,6 +19,6 @@ Frameworks used: bootstrap v5.1
 1. Delete button for images
 1. Like button (not a functional one :( )
 
-website link: [Mani Mask](http://manimask.atwebpages.com/)
+
 
 [Note: This website is hosted on a free account hence has no security. Also the background gif is very large in size and might give a laggy experience on low end devices/slow networks!]
